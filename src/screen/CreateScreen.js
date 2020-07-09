@@ -5,14 +5,15 @@ import BlogPostForm from '../component/BlogPostForm'
 
 const CreateScreen = ({navigation}) => {
     const {addbp}=useContext(Context)
-    return <BlogPostForm iv={{t:'',c:''}}
+    return (
+    <BlogPostForm iv={{t:'',c:''}}
               onSubmit={(t,c)=>addbp(t,c,()=>navigation.navigate('Index'))
-    }/>
+    }/>)
    
 }
 CreateScreen.navigationOptions=()=>{
     return{
-        title:'Create ToDO Items with Details'
+        title:'Create Screen'
     }
 }
 const styles=StyleSheet.create({

@@ -10,22 +10,15 @@ import EditScreen from './src/screen/EditScreen';
 
 
 const navigator=createStackNavigator({
-Index:IndexScreen,
-Show:ShowScreen,
-Create:CreateScreen,
-Edit:EditScreen
+  Index:IndexScreen,
+   Show:ShowScreen,
+   Create:CreateScreen,
+   Edit:EditScreen
 
-},{
+},
+{
   initialRouteName:'Index',
-  
-
-})
-
-
-
-const styles = StyleSheet.create({
-  
-});
+  })
 
 const App=createAppContainer(navigator)
 

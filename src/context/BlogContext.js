@@ -5,7 +5,8 @@ import jsonServer from '../api/jsonServer'
 
 
 const blogReducer=(state,action)=>{
-     switch(action.type){
+     switch(action.type)
+     {
         case 'get_blogposts':
             {
                 return action.payload
